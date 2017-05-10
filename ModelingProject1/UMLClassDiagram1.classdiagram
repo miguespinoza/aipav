@@ -1,0 +1,630 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="41e9a12b-0e45-4ec9-b081-70890b5b901c" name="UMLClassDiagram1" linkedPackageId="adbfcb19-6582-4676-aa9e-3e899a8afdbd" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="a3355b00-9048-4a30-8c0f-8f95d58e3d47">
+      <profileInstance Id="812fce0f-c34b-4292-8ecd-4b0378f5a305" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="eb605339-40c3-40d5-bff4-cfd890ba7382">
+      <profileInstance Id="93b4bb45-2a06-41f3-aa6a-62ebbf5cb069" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="a63fa752-3089-42f4-bb17-c74623199222" name="AsyncResponse" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6cd58a39-50d4-4a2b-a08f-8a1428c1dff6" />
+        <suppliersInternal>
+          <dependency Id="6186bdc9-16ad-427f-a3a6-4b96dfc64e26">
+            <classMoniker Id="49694a4a-d4e4-479f-9b35-b3fea7d6f865" LastKnownName="mainActivity" />
+            <elementDefinition Id="a8cefe23-207f-44b4-a65e-dff19caafdca" />
+          </dependency>
+        </suppliersInternal>
+        <ownedOperations>
+          <operation Id="767b37e4-c64b-4d9a-ab87-8947e3eeb006" name="processFinished" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="4a1dfaaf-3f97-4871-a71d-fb0d6ee617c4" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="86eceab7-06cd-4003-8919-34d65e4a077a" name="output" direction="In" isUnique="false">
+                  <elementDefinition Id="f5c024d7-9f5e-47e3-b800-a699029f8ad2" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="0321b2a2-c9ae-4db1-91b9-fe83d11a5211" name="REST" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="07edfa16-4bff-4a6c-9ed0-521fce5374be" />
+        <suppliersInternal>
+          <dependency Id="b746286a-bb6a-48a2-9432-a830645bec9d">
+            <classMoniker Id="49694a4a-d4e4-479f-9b35-b3fea7d6f865" LastKnownName="mainActivity" />
+            <elementDefinition Id="617128ec-62d0-42e9-a5f0-f806713d9cc5" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="c7afbec8-03a2-44fb-97d6-9905c6ed2ddc" name="delegate" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8a5846f8-2c57-463a-bfac-fa49d95b122d" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="d013c6b5-2682-486d-bae4-03c6c60d1daf" LastKnownName="AsyncResponse" />
+            </type_NamedElement>
+          </property>
+          <property Id="2780b611-e1f1-453b-a009-626cba9a1a77" name="tipo" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="eefe1989-59f5-4906-941f-c292833cd4ca" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="ca50ee03-7640-4928-b8a6-a3eb894351b2" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="b68a2e78-acc7-4644-bfb4-81d302e91a26" name="response" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d3b2df17-b337-40ac-9177-c380c34611b1" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="ca50ee03-7640-4928-b8a6-a3eb894351b2" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="56cf463f-82b9-4250-8bf4-0700976f0b05" name="doInBackgroud" visibility="Protected" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="39baa4bd-0e63-44c5-b21a-82f5e2bd166f" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a2150c47-15e4-456b-8d1f-4f87ae1254e9" direction="Return" isUnique="false">
+                  <elementDefinition Id="fe14cea0-5ceb-4315-b310-83b01fe44f54" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="ca50ee03-7640-4928-b8a6-a3eb894351b2" LastKnownName="String" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="c6e543c8-b886-4ff1-93f3-8274081f8d58" name="onPostExecute" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="8d88c3c2-ea4c-47b1-a496-818782fe8fe6" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="c7069506-a0e4-4eb4-94fc-64fedf855f35" name="output" direction="In" isUnique="false">
+                  <elementDefinition Id="d8c5e312-edb7-4d01-b382-b10e25b5e7a2" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="ca50ee03-7640-4928-b8a6-a3eb894351b2" LastKnownName="String" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="006b5dcf-6ec9-4711-9b3b-947f4b7563fb" name="post" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="13424b7a-f211-4304-8fdb-8c39e1776b16" />
+          </operation>
+          <operation Id="31cc57c6-7e07-46bc-8ee4-73e9bbafff05" name="update" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="422cf7a2-ce99-400c-88ce-b5abe51e1432" />
+          </operation>
+          <operation Id="e528013b-8650-4603-8956-7349cda829c1" name="delete" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="cc0880cf-ced0-4850-b51b-26f685cdfbd6" />
+          </operation>
+          <operation Id="772a0454-dbcf-4c2c-8f15-f3d000f33c91" name="get" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="a268af61-8883-40f8-a5d5-ddbf611588d3" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="d013c6b5-2682-486d-bae4-03c6c60d1daf" name="AsyncResponse" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::AsyncResponse">
+        <elementDefinition Id="6cd58a39-50d4-4a2b-a08f-8a1428c1dff6" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="ca50ee03-7640-4928-b8a6-a3eb894351b2" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="49694a4a-d4e4-479f-9b35-b3fea7d6f865" name="mainActivity" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d779fe26-f62d-4af7-a469-956fb28a2bd8" />
+        <targetEnds>
+          <association Id="3a9446fc-3855-4af5-84bd-d5264d340160" isDerived="false" sourceEndRoleName="mainActivity" targetEndRoleName="ActivityAdapter" isLeaf="false" isAbstract="false">
+            <classMoniker Id="ab1e20f5-152c-4710-a49d-7ae332823af8" LastKnownName="ActivityAdapter" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fb9be793-25ca-4e67-aed1-e8e008b6919f" name="mainActivity" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="8c10b233-5179-4ed0-958c-e05f1ac62a7c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1c11fe1d-1fa7-4125-8ec6-e98a43a1cfdc" name="ActivityAdapter" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="62bd34b2-2e5e-4a27-9de9-f8b5a8fda579" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e83ab060-79cc-4c38-985e-973ac9f6a57c" />
+          </association>
+          <association Id="2096ffe6-3315-48ee-917f-224106df69e7" isDerived="false" sourceEndRoleName="mainActivity" targetEndRoleName="PlaceAdapter" isLeaf="false" isAbstract="false">
+            <classMoniker Id="24092248-9865-4f85-bb29-c9a7b028ad65" LastKnownName="PlaceAdapter" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="83400375-5ea4-4fe5-977e-4ff855381cb9" name="mainActivity" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f38e02d7-5341-467d-a249-f5001d471e25" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="30d1cc85-e864-467e-99bc-82a93acf5b1f" name="PlaceAdapter" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="36a65170-5a7a-499f-ae2d-c4c9a89b6293" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="30982fb4-414a-4d55-9690-1ac90329e25d" />
+          </association>
+          <association Id="190498e2-dc96-4cb6-9b6d-6ea6d8f16c1f" isDerived="false" sourceEndRoleName="mainActivity" targetEndRoleName="ItineraryAdapter" isLeaf="false" isAbstract="false">
+            <classMoniker Id="2d4414d9-9531-4baf-a730-b51681ddd2fc" LastKnownName="ItineraryAdapter" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9b71229a-7fd6-4281-bf7c-dcc612f18838" name="mainActivity" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="4f2e1676-ca7d-4bff-8c84-cafde492f77d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="33b6dcee-afda-4c17-b224-8e2aa5870a90" name="ItineraryAdapter" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="a2ea9afb-d67c-45f7-9c6f-802593bf8e88" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="abd5aebc-21e0-4550-8f00-77727f0ad61e" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="4c63ff92-64a6-49c9-a560-a7cc348aeb8e" name="itineraryAdapter" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="54176bad-76f3-4c3d-acaa-7eed61be0e58" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="420b42d6-da70-4d0d-9be0-27f6634bd9fe" LastKnownName="ItineraryAdapter" />
+            </type_NamedElement>
+          </property>
+          <property Id="f0f500d4-f4b2-4369-bfc9-cba10fc70bf5" name="placeAdapter" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="92b020ad-07ca-4c56-b3d1-1b7a5cc72a74" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="e4bf8183-2c32-4a70-90f5-ebb300a096ca" LastKnownName="PlaceAdapter" />
+            </type_NamedElement>
+          </property>
+          <property Id="80b275d1-03b2-4dd0-b462-324de9a55527" name="activityAdapter" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3d409684-3297-4af1-8088-2b8b75646d47" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="2a5da263-e357-4808-81a0-7776b364c8a1" LastKnownName="ActivityAdapter" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="5dacdfd1-a1bd-4cc9-a2e0-ee001d61c0af" name="onCreate" visibility="Protected" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c8906baa-e9e1-4f15-ae0d-d7e9c7cf9c60" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="45d40042-0a2e-4d9d-bf88-cdb6fa6808b0" name="savedInstanceState" direction="In" isUnique="false">
+                  <elementDefinition Id="fbefc46a-c2cf-448a-ae3c-b2019a077c06" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="de49c055-b46e-47fa-bfa6-17ed85892618" LastKnownName="Bundle" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="201e9f50-ae3c-4804-95a5-5455ec89b9ae" name="processFinish" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="52252e42-68eb-48b3-aff1-144d3c77ebb7" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="3ac44a70-351a-4fc7-9e68-fba12aee06db" name="output" direction="In" isUnique="false">
+                  <elementDefinition Id="7017b4ec-ba89-4082-b99c-583fbe5c197a" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="ca50ee03-7640-4928-b8a6-a3eb894351b2" LastKnownName="String" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="de49c055-b46e-47fa-bfa6-17ed85892618" name="Bundle" isAbstract="false" isLeaf="false" cachedFullName="Bundle">
+        <elementDefinition Id="dc785fdd-859f-4ea4-9959-3670efeca0ef" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="2a5da263-e357-4808-81a0-7776b364c8a1" name="ActivityAdapter" isAbstract="false" isLeaf="false" cachedFullName="ActivityAdapter">
+        <elementDefinition Id="1c1ab41d-a212-4913-9378-2f100adb7cdb" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="e4bf8183-2c32-4a70-90f5-ebb300a096ca" name="PlaceAdapter" isAbstract="false" isLeaf="false" cachedFullName="PlaceAdapter">
+        <elementDefinition Id="80181cd7-6668-4af4-9b45-4a99f21ff876" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="420b42d6-da70-4d0d-9be0-27f6634bd9fe" name="ItineraryAdapter" isAbstract="false" isLeaf="false" cachedFullName="ItineraryAdapter">
+        <elementDefinition Id="1cda2c43-0163-49bd-8db8-df29e30aaa5c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="ab1e20f5-152c-4710-a49d-7ae332823af8" name="ActivityAdapter" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="46ab59bf-d99f-4fde-b43e-45cbf4e3f6e8" />
+        <ownedOperationsInternal>
+          <operation Id="b21ffd06-8536-4d17-b37b-53f29cbea5d1" name="ActivityAdapter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0ee7007d-89c2-4048-ae32-a929549d8472" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="e68b1a46-707e-445a-ae48-1da7282cfdd7" name="context" direction="In" isUnique="false">
+                  <elementDefinition Id="480ea2b2-e842-46e5-a5ef-19dc7a0f530c" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="e92647c1-2ae7-42f4-8dc2-1b0ee65795d5" LastKnownName="Context" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="e4cbb1a0-b7cb-4736-844e-7bc77f1e9d55" name="activity" direction="In" isUnique="false">
+                  <elementDefinition Id="5c900e08-3f1d-40fa-9d34-65a380587362" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="18f4a2d7-b2e5-4271-a5f8-8985ec213dc8" LastKnownName="List" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="7a4f767a-cbb1-4b33-ab6c-4b2046e26bc3" name="getView" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="653f2df6-4e02-4032-a71c-54c71f8b0a05" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="2e7b300a-5dd8-4781-8d1d-868a847c1df8" name="position" direction="In" isUnique="false">
+                  <elementDefinition Id="cdaa9367-2c12-4abe-8c44-5d335b3a60aa" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="3334f152-8cb5-4745-8523-05b563559faf" LastKnownName="int" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="80f4dcb6-9bf7-46d8-9122-735e50a81b77" name="convertView" direction="In" isUnique="false">
+                  <elementDefinition Id="3d35a8d7-4717-4acd-baf2-54b3aee528ac" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="f715b43a-93bf-45c4-b9dd-36b1edc9f3c6" LastKnownName="View" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="5d3b5998-2df5-469d-a94b-01a0bbfb0a5d" name="parent" direction="In" isUnique="false">
+                  <elementDefinition Id="4ea2be2f-bfe9-4bd3-9273-7a4af04d7b70" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="2f4e6f9a-541c-4bb8-92a4-5817c542e9ae" LastKnownName="ViewGroup" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="d8ed18bc-8085-45fb-b150-6d48e3a2e1b3" direction="Return" isUnique="false">
+                  <elementDefinition Id="cf27502b-aafc-491b-a5da-d01f3f8a8c65" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="f715b43a-93bf-45c4-b9dd-36b1edc9f3c6" LastKnownName="View" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="e92647c1-2ae7-42f4-8dc2-1b0ee65795d5" name="Context" isAbstract="false" isLeaf="false" cachedFullName="Context">
+        <elementDefinition Id="8bba66cf-0bea-4433-bd4f-ae7c792dcafa" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="18f4a2d7-b2e5-4271-a5f8-8985ec213dc8" name="List" isAbstract="false" isLeaf="false" cachedFullName="List">
+        <elementDefinition Id="bdc18bb7-1288-455d-a133-9c7a485bb931" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="3334f152-8cb5-4745-8523-05b563559faf" name="int" isAbstract="false" isLeaf="false" cachedFullName="int">
+        <elementDefinition Id="ef026c6e-cc80-4484-a78c-bb4a00c5f53c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="f715b43a-93bf-45c4-b9dd-36b1edc9f3c6" name="View" isAbstract="false" isLeaf="false" cachedFullName="View">
+        <elementDefinition Id="0c864fa0-1091-48cd-8b4a-616c2562e4b1" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="2f4e6f9a-541c-4bb8-92a4-5817c542e9ae" name="ViewGroup" isAbstract="false" isLeaf="false" cachedFullName="ViewGroup">
+        <elementDefinition Id="766db2a8-1113-485f-8215-278722e46718" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="4bb7ec3c-d91d-4f68-bfb7-0e3a6fdac71f" name="Context" isAbstract="false" isLeaf="false" cachedFullName="Context">
+        <elementDefinition Id="8bba66cf-0bea-4433-bd4f-ae7c792dcafa" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="14f0e7ab-eded-4127-97ab-0b35e5d6e183" name="List" isAbstract="false" isLeaf="false" cachedFullName="List">
+        <elementDefinition Id="bdc18bb7-1288-455d-a133-9c7a485bb931" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="32cb6dac-23e0-49ba-b765-d90601343abd" name="int" isAbstract="false" isLeaf="false" cachedFullName="int">
+        <elementDefinition Id="ef026c6e-cc80-4484-a78c-bb4a00c5f53c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="059e17b0-5efe-4a95-96ad-3484f07ad4ed" name="View" isAbstract="false" isLeaf="false" cachedFullName="View">
+        <elementDefinition Id="0c864fa0-1091-48cd-8b4a-616c2562e4b1" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="6ecb225b-e369-4f57-8bff-f932ca36320a" name="ViewGroup" isAbstract="false" isLeaf="false" cachedFullName="ViewGroup">
+        <elementDefinition Id="766db2a8-1113-485f-8215-278722e46718" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="24092248-9865-4f85-bb29-c9a7b028ad65" name="PlaceAdapter" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="55b1307b-2150-4044-8124-f992dc0a56d1" />
+        <ownedOperationsInternal>
+          <operation Id="6caef985-c8b5-4006-902d-3c29050ef13f" name="ActivityAdapter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="6a459d34-ec74-4436-a9e5-9c70837adf5c" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="3628abc7-3c99-488f-8c93-90c66c4fcff9" name="context" direction="In" isUnique="false">
+                  <elementDefinition Id="715992f2-09a7-41fd-a221-04d1245a32ea" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4bb7ec3c-d91d-4f68-bfb7-0e3a6fdac71f" LastKnownName="Context" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="b4e878c8-ca46-4fa2-865f-a7ec3f4a050e" name="places" direction="In" isUnique="false">
+                  <elementDefinition Id="956d3255-5666-4cb2-b57f-7cacb24c5aaa" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="14f0e7ab-eded-4127-97ab-0b35e5d6e183" LastKnownName="List" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="50cd3439-f230-4382-ae54-0e7d23d2df84" name="getView" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0e4810aa-bd90-40c5-88c2-d71b4f737a82" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="21318737-4f28-40b5-9308-9a4b147dfd01" name="position" direction="In" isUnique="false">
+                  <elementDefinition Id="344ff14b-79cd-4961-a938-6d09dd4a3418" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="32cb6dac-23e0-49ba-b765-d90601343abd" LastKnownName="int" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="0ad7e161-8358-47d9-aa3d-5dc9124036e1" name="convertView" direction="In" isUnique="false">
+                  <elementDefinition Id="36e6c2d0-c66d-49ba-805b-023e493f042f" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="059e17b0-5efe-4a95-96ad-3484f07ad4ed" LastKnownName="View" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="6f6b350e-cfea-42fd-ae39-68c51e2fdf5f" name="parent" direction="In" isUnique="false">
+                  <elementDefinition Id="ceebfdcf-cf48-4e92-b638-471a007b8348" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="6ecb225b-e369-4f57-8bff-f932ca36320a" LastKnownName="ViewGroup" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="73af0591-6a5e-45a4-ab82-b74c04ec7d4b" direction="Return" isUnique="false">
+                  <elementDefinition Id="4e5e014d-29ac-4b8c-884c-d1de2cd829dd" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="059e17b0-5efe-4a95-96ad-3484f07ad4ed" LastKnownName="View" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="9696406b-6432-46a6-93c2-412e804ea6e1" name="Context" isAbstract="false" isLeaf="false" cachedFullName="Context">
+        <elementDefinition Id="8bba66cf-0bea-4433-bd4f-ae7c792dcafa" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="21badc00-2802-48c8-b0dc-692adabbfbdb" name="List" isAbstract="false" isLeaf="false" cachedFullName="List">
+        <elementDefinition Id="bdc18bb7-1288-455d-a133-9c7a485bb931" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="e2891bad-a0cb-4dd4-9bed-1b88167842a7" name="int" isAbstract="false" isLeaf="false" cachedFullName="int">
+        <elementDefinition Id="ef026c6e-cc80-4484-a78c-bb4a00c5f53c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="ea47534a-d0fd-4879-bba6-d62632c24717" name="View" isAbstract="false" isLeaf="false" cachedFullName="View">
+        <elementDefinition Id="0c864fa0-1091-48cd-8b4a-616c2562e4b1" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="cc027529-1269-4055-9402-8a516286551c" name="ViewGroup" isAbstract="false" isLeaf="false" cachedFullName="ViewGroup">
+        <elementDefinition Id="766db2a8-1113-485f-8215-278722e46718" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="2d4414d9-9531-4baf-a730-b51681ddd2fc" name="ItineraryAdapter" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a8fdb126-15d3-424a-b2f4-fb398f2c781f" />
+        <ownedOperationsInternal>
+          <operation Id="a88d8453-a327-4aea-854c-f9ec83612ee1" name="ActivityAdapter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="90640b25-6725-42d1-ae21-1f104509b110" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="5215f0a6-7656-4c9f-b908-14b8a5552994" name="context" direction="In" isUnique="false">
+                  <elementDefinition Id="2214fdcc-8f66-44d7-918e-7812559eed1d" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="9696406b-6432-46a6-93c2-412e804ea6e1" LastKnownName="Context" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="c54c5b70-c696-4e77-9641-21a7dc432f1d" name="itineraries" direction="In" isUnique="false">
+                  <elementDefinition Id="8af678d3-a85d-4076-b38d-9692d4a7e890" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="21badc00-2802-48c8-b0dc-692adabbfbdb" LastKnownName="List" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="8f05de55-9377-43ca-9e56-dc38ae953131" name="getView" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="63732f8d-f26d-43af-bf50-a3abd94b2a18" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="7f1c4583-a3d1-41b3-846e-3337eb31160d" name="position" direction="In" isUnique="false">
+                  <elementDefinition Id="fb1ff04f-0aca-4fef-8376-b073fc968e66" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="e2891bad-a0cb-4dd4-9bed-1b88167842a7" LastKnownName="int" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="3cd37bce-21bd-4044-9afd-ad43daedbb96" name="convertView" direction="In" isUnique="false">
+                  <elementDefinition Id="fc1e50e2-c2d6-4c56-91b1-082a05a684e9" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="ea47534a-d0fd-4879-bba6-d62632c24717" LastKnownName="View" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="75f5e385-ba35-403b-82f2-f5b83497645f" name="parent" direction="In" isUnique="false">
+                  <elementDefinition Id="8bfd75bb-8bae-4769-942b-014bbae87bab" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="cc027529-1269-4055-9402-8a516286551c" LastKnownName="ViewGroup" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="62a59017-789a-4423-bc01-11a41234bec7" direction="Return" isUnique="false">
+                  <elementDefinition Id="7f95ed36-5bc0-41b4-b47c-c6d19962dbc8" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="ea47534a-d0fd-4879-bba6-d62632c24717" LastKnownName="View" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="b58feb40-5ef0-44f2-846d-70956a5e7159" name="placeActivity" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="3d51a525-465b-4c10-9256-d2ce61baabf6" />
+        <ownedOperationsInternal>
+          <operation Id="e5a3ef76-0c11-4b08-b028-f57c76f07e61" name="onCreate" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ed383ca2-33d1-45dd-930f-0a04999eb455" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="580eea1a-6d12-438e-bb6c-9b2741547732" name="savedInstanceState" direction="In" isUnique="false">
+                  <elementDefinition Id="3fc84f08-9437-45d1-aeb8-e801e703ff6a" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="de49c055-b46e-47fa-bfa6-17ed85892618" LastKnownName="Bundle" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="70402737-a879-4766-854b-ba95eaf449ce" name="ItineraryActivity" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="62961060-186a-4a4d-9094-dc75ad320de7" />
+        <targetEnds>
+          <association Id="7acb6a4b-f553-42f0-9be0-6a44bebbe356" isDerived="false" sourceEndRoleName="ItineraryActivity" targetEndRoleName="PlaceAdapter" isLeaf="false" isAbstract="false">
+            <classMoniker Id="24092248-9865-4f85-bb29-c9a7b028ad65" LastKnownName="PlaceAdapter" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="77174083-f5f7-44d7-97f9-cd4f99826828" name="ItineraryActivity" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="62527021-d41d-4078-ac95-766fb15f1d1b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1e0ffec5-5bf6-4279-a1c9-3aebfd934143" name="PlaceAdapter" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="95d6a2e1-7182-4db4-9104-dad62fb87e95" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="37311ed9-4993-4630-bc54-638c6310428d" />
+          </association>
+          <association Id="370b29fe-af3e-45d8-905e-2e0127d7101d" isDerived="false" sourceEndRoleName="ItineraryActivity" targetEndRoleName="ActivityAdapter" isLeaf="false" isAbstract="false">
+            <classMoniker Id="ab1e20f5-152c-4710-a49d-7ae332823af8" LastKnownName="ActivityAdapter" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7300dc7c-4872-44c9-ab6d-1fe0e9715d03" name="ItineraryActivity" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="69c09560-fd53-49f5-b667-bc410dd3cfe7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="20efc432-a11f-4052-8348-1ddf33ecb1ab" name="ActivityAdapter" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="4fe43579-8880-4902-b7de-dfad6bbf6889" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ef118a3e-dae2-4b95-a131-592b59a8ff3a" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="be133b5b-6452-4b5b-b164-142e96d438d5" name="placeAdapter" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6306ca97-fd5e-4e1b-a423-80a4f9b0d743" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="cc118eac-b839-43b0-b145-6d0208491dad" LastKnownName="PlaceAdapter" />
+            </type_NamedElement>
+          </property>
+          <property Id="02c3b311-f734-4454-82e2-9d81773e338f" name="activityAdapter" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9a784886-4e9b-4623-95ba-ce52cc1d39a7" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="6617460a-5bf9-42f3-85ba-108f32799e18" LastKnownName="ActivityAdapter" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="ef75ae57-f0a5-4e8b-8260-99d4cfa28ee2" name="onCreate" visibility="Protected" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="6289f0ef-c1fa-4969-8b1f-82ae1ad74ebf" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="6f262b64-9d3d-4de2-8110-6061f7828956" name="savedInstanceState" direction="In" isUnique="false">
+                  <elementDefinition Id="5d95ddaa-c0a7-42aa-ac88-b58898769893" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="de49c055-b46e-47fa-bfa6-17ed85892618" LastKnownName="Bundle" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="2bddeec8-54c5-451e-b7ed-f54fdbc69998" name="processFinish" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="a3eabcfe-9425-4914-9104-466b4738192a" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="7170858c-d797-40e5-a82f-da9b2f3dcd0b" name="output" direction="In" isUnique="false">
+                  <elementDefinition Id="1e7e8781-5cba-487c-9ce7-2e57691f217d" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="ca50ee03-7640-4928-b8a6-a3eb894351b2" LastKnownName="String" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="cc118eac-b839-43b0-b145-6d0208491dad" name="PlaceAdapter" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::PlaceAdapter">
+        <elementDefinition Id="55b1307b-2150-4044-8124-f992dc0a56d1" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="6617460a-5bf9-42f3-85ba-108f32799e18" name="ActivityAdapter" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::ActivityAdapter">
+        <elementDefinition Id="46ab59bf-d99f-4fde-b43e-45cbf4e3f6e8" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="adbfcb19-6582-4676-aa9e-3e899a8afdbd" name="ModelingProject1">
+    <elementDefinition Id="75c44da8-41cc-4fa5-a0ac-6c7364a0aa3c" />
+  </package>
+</logicalClassDesignerModel>

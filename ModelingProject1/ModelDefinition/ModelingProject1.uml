@@ -1103,7 +1103,7 @@
     <packageHasNamedElement>
       <class
         Id="f30e1fb2-5456-41d5-9447-d9c36d4c7f88"
-        name="REST"
+        name="RestEngine"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -1385,6 +1385,16 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="ebad2a7f-8133-4ed0-aa26-a0f779a92b9c"
+            name="&lt;&lt;use&gt;&gt;">
+            <classMoniker
+              Id="f30e1fb2-5456-41d5-9447-d9c36d4c7f88"
+              LastKnownName="RestEngine"
+              LastKnownLocation="ModelingProject1.uml" />
+          </dependency>
+        </suppliersInternal>
         <ownedAttributesInternal>
           <property
             Id="6ac06079-4866-4bfa-84e5-70eb8dda09ac"
@@ -1581,6 +1591,16 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="97df72df-9336-40be-874d-349fb3bf9816"
+            name="&lt;&lt;use&gt;&gt;">
+            <classMoniker
+              Id="f30e1fb2-5456-41d5-9447-d9c36d4c7f88"
+              LastKnownName="RestEngine"
+              LastKnownLocation="ModelingProject1.uml" />
+          </dependency>
+        </suppliersInternal>
         <ownedAttributesInternal>
           <property
             Id="4d78a053-c38d-400f-8716-7994aad3180b"
@@ -1733,6 +1753,16 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="0edef7da-92c2-4745-b015-67d29edcc1ca"
+            name="&lt;&lt;use&gt;&gt;">
+            <classMoniker
+              Id="f30e1fb2-5456-41d5-9447-d9c36d4c7f88"
+              LastKnownName="RestEngine"
+              LastKnownLocation="ModelingProject1.uml" />
+          </dependency>
+        </suppliersInternal>
         <ownedOperationsInternal>
           <operation
             Id="4aa95485-f8eb-481a-a240-598b4d44748f"
@@ -1770,6 +1800,16 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="bb71e209-7cdb-4b7f-b9d6-7ab2785c8a59"
+            name="&lt;&lt;use&gt;&gt;">
+            <classMoniker
+              Id="f30e1fb2-5456-41d5-9447-d9c36d4c7f88"
+              LastKnownName="RestEngine"
+              LastKnownLocation="ModelingProject1.uml" />
+          </dependency>
+        </suppliersInternal>
         <ownedOperationsInternal>
           <operation
             Id="62774d8b-eb10-48a6-9130-ab09e44c13c8"
@@ -1857,6 +1897,16 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="879f022e-3261-4e42-90fd-d8c1b64494c0"
+            name="&lt;&lt;use&gt;&gt;">
+            <classMoniker
+              Id="f30e1fb2-5456-41d5-9447-d9c36d4c7f88"
+              LastKnownName="RestEngine"
+              LastKnownLocation="ModelingProject1.uml" />
+          </dependency>
+        </suppliersInternal>
         <ownedOperationsInternal>
           <operation
             Id="ca5ef009-16a7-42a9-9b0d-f63cce6e568d"
@@ -1944,6 +1994,16 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="21f5ce0f-10d7-45ef-9a23-202747b5cee6"
+            name="&lt;&lt;use&gt;&gt;">
+            <classMoniker
+              Id="f30e1fb2-5456-41d5-9447-d9c36d4c7f88"
+              LastKnownName="RestEngine"
+              LastKnownLocation="ModelingProject1.uml" />
+          </dependency>
+        </suppliersInternal>
         <ownedAttributesInternal>
           <property
             Id="6fc67a4d-1fbd-4a4d-ac22-9ad42e1ea2c5"
@@ -2077,6 +2137,15 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="a83eac10-efae-49d5-a682-02f08c7ed1f7">
+            <classMoniker
+              Id="f30e1fb2-5456-41d5-9447-d9c36d4c7f88"
+              LastKnownName="RestEngine"
+              LastKnownLocation="ModelingProject1.uml" />
+          </dependency>
+        </suppliersInternal>
         <ownedAttributesInternal>
           <property
             Id="723e7625-09cf-4b3b-98b0-26323dc5ef26"
@@ -2185,6 +2254,15 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="0bad7f49-5911-4dcd-a79d-197f1130586c">
+            <classMoniker
+              Id="f30e1fb2-5456-41d5-9447-d9c36d4c7f88"
+              LastKnownName="RestEngine"
+              LastKnownLocation="ModelingProject1.uml" />
+          </dependency>
+        </suppliersInternal>
         <ownedOperationsInternal>
           <operation
             Id="af16ce8a-d6f7-4ea4-a2fe-c9f018b3d4f6"
@@ -2211,6 +2289,32 @@
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
+          <operation
+            Id="ef32ad8b-d51a-4a6e-b85e-042a313d6a58"
+            name="onCreate"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d92e428d-8bbb-420d-88b9-8467cefe11df"
+                  name="savedInstanceState"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="dc785fdd-859f-4ea4-9959-3670efeca0ef"
+                      LastKnownName="Bundle"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
@@ -2231,6 +2335,16 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="2efa9960-8de0-45ae-87d2-cca06b4efb86"
+            name="&lt;&lt;use&gt;&gt;">
+            <classMoniker
+              Id="f30e1fb2-5456-41d5-9447-d9c36d4c7f88"
+              LastKnownName="RestEngine"
+              LastKnownLocation="ModelingProject1.uml" />
+          </dependency>
+        </suppliersInternal>
         <ownedOperationsInternal>
           <operation
             Id="ed7c0886-38aa-4ea0-8131-8f132a96eb96"

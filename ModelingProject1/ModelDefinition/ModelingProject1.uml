@@ -1075,7 +1075,7 @@
     <packageHasNamedElement>
       <Interface
         Id="5abd48bb-768e-4527-bafc-1fbcffa5c41c"
-        name="AsyncResponse1"
+        name="AsyncResponse"
         isAbstract="false"
         isLeaf="false">
         <ownedOperations>
@@ -1103,7 +1103,7 @@
     <packageHasNamedElement>
       <class
         Id="f30e1fb2-5456-41d5-9447-d9c36d4c7f88"
-        name="REST1"
+        name="REST"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -1381,7 +1381,7 @@
     <packageHasNamedElement>
       <class
         Id="ad50b1e2-e6f1-49d6-8404-88d4a058f5b2"
-        name="mainActivity1"
+        name="MainActivity"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -1737,6 +1737,7 @@
           <operation
             Id="4aa95485-f8eb-481a-a240-598b4d44748f"
             name="onCreate"
+            visibility="Protected"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -1769,18 +1770,6 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
-        <ownedAttributesInternal>
-          <property
-            Id="6d72de67-0fad-403d-afda-aedb1ec3d695"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-        </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation
             Id="62774d8b-eb10-48a6-9130-ab09e44c13c8"
@@ -1808,13 +1797,6 @@
             </ownedParameters>
           </operation>
           <operation
-            Id="a7f408a6-9e86-4c70-a944-2e4537f45ea7"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false" />
-          <operation
             Id="c5ed730b-ef81-4449-82ed-7be4e10a0e2c"
             name="selectItem"
             isLeaf="false"
@@ -1833,6 +1815,443 @@
                     <undefinedTypeMoniker
                       Id="0c864fa0-1091-48cd-8b4a-616c2562e4b1"
                       LastKnownName="View"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="cd7b5320-16b7-4da2-ba83-13eb1ecc017a"
+            name="onCreate"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7706469b-be01-4688-98c7-1cae748912a9"
+                  name="savedInstanceSaved"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="dc785fdd-859f-4ea4-9959-3670efeca0ef"
+                      LastKnownName="Bundle"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="3f17f45b-91ac-469e-9cc8-d7866b7630e7"
+        name="LogInActivity"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedOperationsInternal>
+          <operation
+            Id="ca5ef009-16a7-42a9-9b0d-f63cce6e568d"
+            name="facebookClick"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e54c0845-4f83-427e-b13d-0dc1688247c3"
+                  name="v"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="0c864fa0-1091-48cd-8b4a-616c2562e4b1"
+                      LastKnownName="View"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="bf5535d6-c901-449d-9c79-de7b61439071"
+            name="twitterClick"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0ee08e2b-1498-4e31-92b4-5e0214a6c4c3"
+                  name="v"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="0c864fa0-1091-48cd-8b4a-616c2562e4b1"
+                      LastKnownName="View"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="cd97a0be-7162-453e-8f35-467f147522d2"
+            name="onCreate"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="33ad957f-77f1-4acf-803b-892448e2cde3"
+                  name="savedInstanceSaved"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="dc785fdd-859f-4ea4-9959-3670efeca0ef"
+                      LastKnownName="Bundle"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="f21bb211-3c5e-4847-97d4-ee960d6e8917"
+        name="MainForum"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="6fc67a4d-1fbd-4a4d-ac22-9ad42e1ea2c5"
+            name="categoryAdapter"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="b93a8a0b-8c39-4208-a3e6-8ce03dc5af19"
+                LastKnownName="CategoryAdapter"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="ed89b123-8757-4bcf-ace0-49ed0cf7b9b9"
+            name="categoriesClick"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2ffe16bf-2121-464c-b1b8-9aa8a77ac9d7"
+                  name="v"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="0c864fa0-1091-48cd-8b4a-616c2562e4b1"
+                      LastKnownName="View"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="0073fc8a-7220-410c-b754-649b915cfda3"
+            name="recentClick"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b3177d33-a630-40dc-9080-0f45f05c4c70"
+                  name="v"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="0c864fa0-1091-48cd-8b4a-616c2562e4b1"
+                      LastKnownName="View"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="01a25cae-0db7-4133-95cb-6e5b35fb2e9c"
+            name="searchClick"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="bfff25e0-460a-4603-9b9d-4bde48922e92"
+                  name="v"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="0c864fa0-1091-48cd-8b4a-616c2562e4b1"
+                      LastKnownName="View"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="0fb00f76-e562-4879-ba8a-dd4a9a9fbf76"
+            name="onCreate"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4fe018af-e98c-46a6-bbd2-82bbb8ca6d9f"
+                  name="savedInstanceSaved"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="dc785fdd-859f-4ea4-9959-3670efeca0ef"
+                      LastKnownName="Bundle"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="016e5671-e1c4-4d04-b132-3af393d2ceec"
+        name="ForumCategory"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="723e7625-09cf-4b3b-98b0-26323dc5ef26"
+            name="forumAdapter"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="65e204eb-1da4-4d33-a5ba-b3c0d51d6971"
+                LastKnownName="ForumAdapter"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="0d80d020-0dd4-42c3-886a-3b63d5487b94"
+            name="selectItem"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d174b490-62ae-40e0-875b-05b9a64e08f1"
+                  name="v"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="0c864fa0-1091-48cd-8b4a-616c2562e4b1"
+                      LastKnownName="View"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="c38b11f9-b0c8-4db5-8c2b-d6f9cb0af9a8"
+            name="orderItems"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2520da5a-54ba-4205-8554-787bd02bd7a2"
+                  name="v"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="0c864fa0-1091-48cd-8b4a-616c2562e4b1"
+                      LastKnownName="View"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="da6cc181-9218-41ae-96f5-bc04fee64434"
+            name="onCreate"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a77fa456-b84b-4a0b-ac7d-4ef403a75d0d"
+                  name="savedInstanceSaved"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="dc785fdd-859f-4ea4-9959-3670efeca0ef"
+                      LastKnownName="Bundle"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="6fcf3e81-1a08-468a-b2f1-3690b9cb94d7"
+        name="ForumDetail"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedOperationsInternal>
+          <operation
+            Id="af16ce8a-d6f7-4ea4-a2fe-c9f018b3d4f6"
+            name="comment"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="17404ff9-f3ff-4ae9-ad89-031067dfd7ca"
+                  name="v"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="0c864fa0-1091-48cd-8b4a-616c2562e4b1"
+                      LastKnownName="View"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="65e204eb-1da4-4d33-a5ba-b3c0d51d6971"
+        name="ForumAdapter" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="b93a8a0b-8c39-4208-a3e6-8ce03dc5af19"
+        name="CategoryAdapter" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="fccced85-a821-4382-b943-750095e541c6"
+        name="activityActivity"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedOperationsInternal>
+          <operation
+            Id="ed7c0886-38aa-4ea0-8131-8f132a96eb96"
+            name="onCreate"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="19fe094a-73a6-47b1-b590-3a726d317b8f"
+                  name="savedInstanceSaved"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="dc785fdd-859f-4ea4-9959-3670efeca0ef"
+                      LastKnownName="Bundle"
                       LastKnownLocation="ModelingProject1.uml" />
                   </type_NamedElement>
                 </parameter>

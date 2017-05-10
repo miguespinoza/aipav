@@ -16,7 +16,7 @@
   </profileInstances>
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
-      <Interface Id="6772be5c-9cfb-48c6-80fb-4d8a2097a4ab" name="AsyncResponse1" isAbstract="false" isLeaf="false">
+      <Interface Id="6772be5c-9cfb-48c6-80fb-4d8a2097a4ab" name="AsyncResponse" isAbstract="false" isLeaf="false">
         <elementDefinition Id="5abd48bb-768e-4527-bafc-1fbcffa5c41c" />
         <ownedOperations>
           <operation Id="6e08e2ad-e5b3-4b07-9709-f245ac2a0f8a" name="processFinished" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
@@ -43,7 +43,7 @@
       </referencedType>
     </packageHasNamedElement>
     <logicalClassDesignerModelHasTypes>
-      <class Id="8b7247ad-861b-4d47-a317-f9af9a22daba" name="REST1" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="8b7247ad-861b-4d47-a317-f9af9a22daba" name="REST" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="f30e1fb2-5456-41d5-9447-d9c36d4c7f88" />
         <ownedAttributesInternal>
           <property Id="58a7e7c7-8386-46a6-91e1-83e9a48b6fca" name="delegate" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
@@ -200,7 +200,7 @@
       </referencedType>
     </packageHasNamedElement>
     <logicalClassDesignerModelHasTypes>
-      <class Id="b4e7ea26-dd8a-4f2a-902d-96ba7aa071cb" name="mainActivity1" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="b4e7ea26-dd8a-4f2a-902d-96ba7aa071cb" name="MainActivity" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="ad50b1e2-e6f1-49d6-8404-88d4a058f5b2" />
         <ownedAttributesInternal>
           <property Id="2438869d-f103-4cb1-8938-160ce1c183aa" name="itineraryAdapter" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
@@ -393,7 +393,7 @@
       <class Id="a6b9d1b9-cbb4-4d4e-a309-050700fc5dd2" name="placeActivity" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="52bac7bc-6e87-4d8b-9d3d-25d40be6f623" />
         <ownedOperationsInternal>
-          <operation Id="cdf72d37-4bb0-4172-aceb-39e43ffa4746" name="onCreate" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+          <operation Id="cdf72d37-4bb0-4172-aceb-39e43ffa4746" name="onCreate" visibility="Protected" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="4aa95485-f8eb-481a-a240-598b4d44748f" />
             <ownedParameters>
               <operationHasOwnedParameters>
@@ -422,11 +422,6 @@
     <logicalClassDesignerModelHasTypes>
       <class Id="2c6812ac-ac43-45ec-8b66-8bc9c708f89b" name="SearchActivity" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="f90dd819-e85a-4194-a7af-47fd95e96763" />
-        <ownedAttributesInternal>
-          <property Id="9219129f-892b-45bf-8dff-360370613f67" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="6d72de67-0fad-403d-afda-aedb1ec3d695" />
-          </property>
-        </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation Id="e10aaeb8-a883-405f-b1a5-705bd2ae19ca" name="searchClick" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="62774d8b-eb10-48a6-9130-ab09e44c13c8" />
@@ -441,9 +436,6 @@
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
-          <operation Id="d71f9989-8b33-4125-831e-26b0c5e445ca" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="a7f408a6-9e86-4c70-a944-2e4537f45ea7" />
-          </operation>
           <operation Id="a0fac1bc-3623-495d-a256-4d7ff0e88eaf" name="selectItem" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="c5ed730b-ef81-4449-82ed-7be4e10a0e2c" />
             <ownedParameters>
@@ -457,9 +449,259 @@
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
+          <operation Id="13c217d8-4e4f-4c28-83ed-3212a2f98721" name="onCreate" visibility="Protected" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="cd7b5320-16b7-4da2-ba83-13eb1ecc017a" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="70300feb-d505-44d4-8d10-aa3dffbc988e" name="savedInstanceSaved" direction="In" isUnique="false">
+                  <elementDefinition Id="7706469b-be01-4688-98c7-1cae748912a9" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="92ab198d-44ee-4ad2-a893-f541b233b3a5" LastKnownName="Bundle" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
         </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="1fcd154d-2cc0-4b7b-bd86-ef8dee312f2a" name="LogInActivity" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="3f17f45b-91ac-469e-9cc8-d7866b7630e7" />
+        <ownedOperationsInternal>
+          <operation Id="2793f7a2-eb46-473f-a647-0f4ecaee73eb" name="facebookClick" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ca5ef009-16a7-42a9-9b0d-f63cce6e568d" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="544340e7-7181-4ce8-b9b4-8b81c590d06a" name="v" direction="In" isUnique="false">
+                  <elementDefinition Id="e54c0845-4f83-427e-b13d-0dc1688247c3" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="1ed04d24-c413-493c-8467-0dfaa1caff22" LastKnownName="View" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="c6904f45-31a6-4a41-92d9-3692821ccd29" name="twitterClick" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="bf5535d6-c901-449d-9c79-de7b61439071" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="2ec1b41d-2722-4dc3-82f5-44e13bbea334" name="v" direction="In" isUnique="false">
+                  <elementDefinition Id="0ee08e2b-1498-4e31-92b4-5e0214a6c4c3" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="1ed04d24-c413-493c-8467-0dfaa1caff22" LastKnownName="View" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="810ebed1-9026-4ef5-ada2-cc7e1f983cb4" name="onCreate" visibility="Protected" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="cd97a0be-7162-453e-8f35-467f147522d2" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="3ea2ea5c-3f1b-4b55-8c26-6095bf16532b" name="savedInstanceSaved" direction="In" isUnique="false">
+                  <elementDefinition Id="33ad957f-77f1-4acf-803b-892448e2cde3" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="6e7491af-cd20-4644-9f3c-a7c8af060d7f" LastKnownName="Bundle" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="7e5ac84a-89fb-40b0-b12a-4717f1c8fc7d" name="MainForum" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="f21bb211-3c5e-4847-97d4-ee960d6e8917" />
+        <ownedAttributesInternal>
+          <property Id="8a5f7a13-5836-41ef-b116-ecda6d064ba0" name="categoryAdapter" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6fc67a4d-1fbd-4a4d-ac22-9ad42e1ea2c5" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="bac7903d-c3ad-421e-8762-c13f338e5bb6" LastKnownName="CategoryAdapter" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="935fc9b0-590a-46ec-8e4e-daa246bc5d94" name="categoriesClick" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ed89b123-8757-4bcf-ace0-49ed0cf7b9b9" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="69fa1f82-d68b-4ccd-8783-cd42ccea6cf9" name="v" direction="In" isUnique="false">
+                  <elementDefinition Id="2ffe16bf-2121-464c-b1b8-9aa8a77ac9d7" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="1ed04d24-c413-493c-8467-0dfaa1caff22" LastKnownName="View" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="4689aa2e-6a22-4619-bc8b-aef5bc4d84a8" name="recentClick" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0073fc8a-7220-410c-b754-649b915cfda3" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="451bfb2c-0f3e-4a3d-8067-9dd14e5351e3" name="v" direction="In" isUnique="false">
+                  <elementDefinition Id="b3177d33-a630-40dc-9080-0f45f05c4c70" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="1ed04d24-c413-493c-8467-0dfaa1caff22" LastKnownName="View" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="87a846ab-454a-4fc0-9c62-5f8d1b7c1fa1" name="searchClick" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="01a25cae-0db7-4133-95cb-6e5b35fb2e9c" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="dc205b1d-ea73-42b0-8e51-78bba11642b5" name="v" direction="In" isUnique="false">
+                  <elementDefinition Id="bfff25e0-460a-4603-9b9d-4bde48922e92" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="1ed04d24-c413-493c-8467-0dfaa1caff22" LastKnownName="View" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="022d5ba6-aa31-47e2-a59f-4be1a87e693a" name="onCreate" visibility="Protected" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0fb00f76-e562-4879-ba8a-dd4a9a9fbf76" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a9e85ad8-49b1-4638-885e-af5aae6d0012" name="savedInstanceSaved" direction="In" isUnique="false">
+                  <elementDefinition Id="4fe018af-e98c-46a6-bbd2-82bbb8ca6d9f" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="3264e178-fe88-4a09-8cd4-e2cf29ca39a4" LastKnownName="Bundle" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="d913398f-de57-4c25-ad40-9dcf75575504" name="ForumCategory" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="016e5671-e1c4-4d04-b132-3af393d2ceec" />
+        <ownedAttributesInternal>
+          <property Id="da547489-f7e6-47c7-8ea3-888691ab92af" name="forumAdapter" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="723e7625-09cf-4b3b-98b0-26323dc5ef26" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="87359659-5853-4e09-9092-52103d575780" LastKnownName="ForumAdapter" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="b33f904f-b0be-44a9-b5a8-a6de2a9a63a0" name="selectItem" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0d80d020-0dd4-42c3-886a-3b63d5487b94" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="270777d5-de46-4ec8-ac8f-ba5828fb0365" name="v" direction="In" isUnique="false">
+                  <elementDefinition Id="d174b490-62ae-40e0-875b-05b9a64e08f1" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="1ed04d24-c413-493c-8467-0dfaa1caff22" LastKnownName="View" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="12cd2e3d-4435-48e8-a447-f4155634e406" name="orderItems" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c38b11f9-b0c8-4db5-8c2b-d6f9cb0af9a8" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="71d0c246-987f-43f8-8492-24d51cab8e7f" name="v" direction="In" isUnique="false">
+                  <elementDefinition Id="2520da5a-54ba-4205-8554-787bd02bd7a2" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="1ed04d24-c413-493c-8467-0dfaa1caff22" LastKnownName="View" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="cea8ba9e-9473-439d-a61d-7fdcb08e080b" name="onCreate" visibility="Protected" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="da6cc181-9218-41ae-96f5-bc04fee64434" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a5371c0d-3cc6-45b5-b139-3f3689cc0ea2" name="savedInstanceSaved" direction="In" isUnique="false">
+                  <elementDefinition Id="a77fa456-b84b-4a0b-ac7d-4ef403a75d0d" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="e9bddd0c-8bc5-404e-a4ae-284536486e5d" LastKnownName="Bundle" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="10cd5253-e7cd-4251-ab99-eb0da3df756b" name="ForumDetail" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="6fcf3e81-1a08-468a-b2f1-3690b9cb94d7" />
+        <ownedOperationsInternal>
+          <operation Id="6f2dffeb-edaa-4d32-8cce-11c026d80658" name="comment" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="af16ce8a-d6f7-4ea4-a2fe-c9f018b3d4f6" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="7ef30463-4785-4418-9f28-b32c0c41c0e3" name="v" direction="In" isUnique="false">
+                  <elementDefinition Id="17404ff9-f3ff-4ae9-ad89-031067dfd7ca" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="1ed04d24-c413-493c-8467-0dfaa1caff22" LastKnownName="View" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="bac7903d-c3ad-421e-8762-c13f338e5bb6" name="CategoryAdapter" isAbstract="false" isLeaf="false" cachedFullName="CategoryAdapter">
+        <elementDefinition Id="b93a8a0b-8c39-4208-a3e6-8ce03dc5af19" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="87359659-5853-4e09-9092-52103d575780" name="ForumAdapter" isAbstract="false" isLeaf="false" cachedFullName="ForumAdapter">
+        <elementDefinition Id="65e204eb-1da4-4d33-a5ba-b3c0d51d6971" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="2b531aa9-04f9-421f-b7f7-68c2c0cce4a3" name="activityActivity" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="fccced85-a821-4382-b943-750095e541c6" />
+        <ownedOperationsInternal>
+          <operation Id="c3e3e1d6-ee76-4339-be9b-e0c00bb647bd" name="onCreate" visibility="Protected" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ed7c0886-38aa-4ea0-8131-8f132a96eb96" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="17c0b7ca-1cbe-4a8d-8d53-04c8dba21bf3" name="savedInstanceSaved" direction="In" isUnique="false">
+                  <elementDefinition Id="19fe094a-73a6-47b1-b590-3a726d317b8f" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="45bdbf6c-d3a3-40c3-a056-2efaa5964f44" LastKnownName="Bundle" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="3264e178-fe88-4a09-8cd4-e2cf29ca39a4" name="Bundle" isAbstract="false" isLeaf="false" cachedFullName="Bundle">
+        <elementDefinition Id="dc785fdd-859f-4ea4-9959-3670efeca0ef" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="e9bddd0c-8bc5-404e-a4ae-284536486e5d" name="Bundle" isAbstract="false" isLeaf="false" cachedFullName="Bundle">
+        <elementDefinition Id="dc785fdd-859f-4ea4-9959-3670efeca0ef" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="92ab198d-44ee-4ad2-a893-f541b233b3a5" name="Bundle" isAbstract="false" isLeaf="false" cachedFullName="Bundle">
+        <elementDefinition Id="dc785fdd-859f-4ea4-9959-3670efeca0ef" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="6e7491af-cd20-4644-9f3c-a7c8af060d7f" name="Bundle" isAbstract="false" isLeaf="false" cachedFullName="Bundle">
+        <elementDefinition Id="dc785fdd-859f-4ea4-9959-3670efeca0ef" />
+      </referencedType>
+    </packageHasNamedElement>
   </packagedElements>
   <package Id="5a3acd92-1aea-43f0-9c79-7605a8613885" name="ModelingProject1">
     <elementDefinition Id="75c44da8-41cc-4fa5-a0ac-6c7364a0aa3c" />

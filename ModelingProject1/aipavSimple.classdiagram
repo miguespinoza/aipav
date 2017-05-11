@@ -1,37 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="5768691e-103b-4853-a951-7c242ff1862d" name="aipavSimple" linkedPackageId="5a3acd92-1aea-43f0-9c79-7605a8613885" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
-  <profileInstances>
-    <packageHasProfileInstances Id="0c93d5eb-05d1-4231-ae10-d05ab2fe5708">
-      <profileInstance Id="bf4d3b13-51c2-47d4-918c-125c45e68729" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="6c176ea1-cb51-439d-841e-14434ce0496a">
-      <profileInstance Id="1dc9d952-7b15-4dee-8077-0cd358a152c8" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" dslVersion="1.0.0.0" Id="5768691e-103b-4853-a951-7c242ff1862d" name="aipavSimple" linkedPackageId="5a3acd92-1aea-43f0-9c79-7605a8613885" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <packagedElements>
-    <logicalClassDesignerModelHasTypes>
-      <Interface Id="6772be5c-9cfb-48c6-80fb-4d8a2097a4ab" name="AsyncResponse" isAbstract="false" isLeaf="false">
-        <elementDefinition Id="5abd48bb-768e-4527-bafc-1fbcffa5c41c" />
-        <ownedOperations>
-          <operation Id="6e08e2ad-e5b3-4b07-9709-f245ac2a0f8a" name="processFinished" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="2567f3b5-dd1a-4631-9d00-8749bde0dd62" />
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="3d5c4d47-aaf7-4247-ac5e-c9585663179d" name="output" direction="In" isUnique="false">
-                  <elementDefinition Id="4b08792e-3be6-42e2-804a-14fe99221161" />
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-        </ownedOperations>
-      </Interface>
-    </logicalClassDesignerModelHasTypes>
     <packageHasNamedElement>
       <referencedType Id="5610bd11-022b-4f4d-ad39-8e0cac59c6a0" name="AsyncResponse" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::AsyncResponse">
         <elementDefinition Id="6cd58a39-50d4-4a2b-a08f-8a1428c1dff6" />
@@ -72,19 +41,6 @@
           </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
-          <operation Id="c3549abe-db90-4aff-aa35-988beac99aaf" name="doInBackgroud" visibility="Protected" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="a1a2d5f5-3369-4a21-837a-ebbdf29bdb82" />
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="9e296ac9-80f6-4753-80bd-a2f8841012b7" direction="Return" isUnique="false">
-                  <elementDefinition Id="e7731725-08d0-45bc-9681-95f4501f5bb4" />
-                  <type_NamedElement>
-                    <referencedTypeMoniker Id="a2815d6e-22bf-4439-a22e-78ff117452db" LastKnownName="String" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
           <operation Id="d11e0d52-1012-4309-966c-f568ca90ae61" name="onPostExecute" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="99e8b946-0b0e-4cd0-b8e6-a77d80cbc543" />
             <ownedParameters>
@@ -542,7 +498,7 @@
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="7e5ac84a-89fb-40b0-b12a-4717f1c8fc7d" name="MainForum" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="7e5ac84a-89fb-40b0-b12a-4717f1c8fc7d" name="MainForumActivity" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="f21bb211-3c5e-4847-97d4-ee960d6e8917" />
         <suppliersInternal>
           <dependency Id="bab96fa3-2c35-4a1c-99f9-d3329cf9334d" name="&lt;&lt;use&gt;&gt;">
@@ -615,10 +571,10 @@
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="d913398f-de57-4c25-ad40-9dcf75575504" name="ForumCategory" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="d913398f-de57-4c25-ad40-9dcf75575504" name="ForumCategoryActivity" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="016e5671-e1c4-4d04-b132-3af393d2ceec" />
         <suppliersInternal>
-          <dependency Id="777dac79-3aa0-4c81-9901-469ba90e69d3">
+          <dependency Id="777dac79-3aa0-4c81-9901-469ba90e69d3" name="&lt;&lt;use&gt;&gt;">
             <classMoniker Id="8b7247ad-861b-4d47-a317-f9af9a22daba" LastKnownName="RestEngine" />
             <elementDefinition Id="a83eac10-efae-49d5-a682-02f08c7ed1f7" />
           </dependency>
@@ -675,10 +631,10 @@
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="10cd5253-e7cd-4251-ab99-eb0da3df756b" name="ForumDetail" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="10cd5253-e7cd-4251-ab99-eb0da3df756b" name="ForumDetailActivity" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="6fcf3e81-1a08-468a-b2f1-3690b9cb94d7" />
         <suppliersInternal>
-          <dependency Id="eeae907b-8425-47ac-a88c-012851691e1f">
+          <dependency Id="eeae907b-8425-47ac-a88c-012851691e1f" name="&lt;&lt;use&gt;&gt;">
             <classMoniker Id="8b7247ad-861b-4d47-a317-f9af9a22daba" LastKnownName="RestEngine" />
             <elementDefinition Id="0bad7f49-5911-4dcd-a79d-197f1130586c" />
           </dependency>
@@ -777,5 +733,19 @@
   </packagedElements>
   <package Id="5a3acd92-1aea-43f0-9c79-7605a8613885" name="ModelingProject1">
     <elementDefinition Id="75c44da8-41cc-4fa5-a0ac-6c7364a0aa3c" />
+    <profileInstances>
+      <packageHasProfileInstances Id="0c93d5eb-05d1-4231-ae10-d05ab2fe5708">
+        <profileInstance Id="bf4d3b13-51c2-47d4-918c-125c45e68729" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="6c176ea1-cb51-439d-841e-14434ce0496a">
+        <profileInstance Id="1dc9d952-7b15-4dee-8077-0cd358a152c8" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </logicalClassDesignerModel>

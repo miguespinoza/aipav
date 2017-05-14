@@ -1,19 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SequenceDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" dslVersion="1.0.0.0" Id="386e5deb-c04c-4ad8-b158-147e69228895" name="Login" linkedPackageId="e0922f7f-d9e8-4363-9523-b639131a16b5" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner">
-  <profileInstances>
-    <packageHasProfileInstances Id="433df2c9-d96a-4373-97af-dcfc4d5b4510">
-      <profileInstance Id="c1367d45-4cc9-496b-9568-d96f2a378a4c" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="9febbfdb-a648-4ae5-ae2b-1a25c805ab89">
-      <profileInstance Id="dd08b092-a21f-4a3f-ba12-67680bb7eaf0" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
+<SequenceDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" dslVersion="1.0.0.0" Id="386e5deb-c04c-4ad8-b158-147e69228895" name="Login" linkedPackageId="e0922f7f-d9e8-4363-9523-b639131a16b5" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner">
   <packagedElements>
     <packageHasNamedElement>
       <interaction Id="b7618d4a-6c57-4089-a098-f7c998798cdf" name="Login" collapseFragmentsFlag="false" isActiveClass="false" isAbstract="false" isLeaf="false" isReentrant="false">
@@ -128,16 +114,16 @@
               <lifelineMoniker Id="e043d5eb-dd87-49b5-9fb3-c26b235fa42b" LastKnownName="userloginview" />
             </covered>
           </executionOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="bc2d4995-7c74-4c4c-9062-c00eaa7b9b74" name="MessageOccurrenceSpecification11">
-            <elementDefinition Id="8e1f48d6-b06f-46bc-be82-d03a12c17cb7" />
-            <covered>
-              <lifelineMoniker Id="cb9c0666-72f0-41c5-8830-2f957aa6b550" LastKnownName="urls" />
-            </covered>
-          </messageOccurrenceSpecification>
           <messageOccurrenceSpecification Id="edc5080f-cd5a-4971-a4e5-b2d6c9ccf840" name="MessageOccurrenceSpecification12">
             <elementDefinition Id="c302fd20-7906-4613-99f0-734572d84bc7" />
             <covered>
               <lifelineMoniker Id="e043d5eb-dd87-49b5-9fb3-c26b235fa42b" LastKnownName="userloginview" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="bc2d4995-7c74-4c4c-9062-c00eaa7b9b74" name="MessageOccurrenceSpecification11">
+            <elementDefinition Id="8e1f48d6-b06f-46bc-be82-d03a12c17cb7" />
+            <covered>
+              <lifelineMoniker Id="cb9c0666-72f0-41c5-8830-2f957aa6b550" LastKnownName="urls" />
             </covered>
           </messageOccurrenceSpecification>
           <messageOccurrenceSpecification Id="cd678663-1ff6-4b44-b11a-4a8dda173a95" name="MessageOccurrenceSpecification13">
@@ -291,7 +277,7 @@
               <messageOccurrenceSpecificationMoniker Id="fca4780c-b222-4cb2-8102-b26c9588a811" LastKnownName="MessageOccurrenceSpecification2" />
             </receiveEvent>
           </message>
-          <message Id="0c4a0579-2347-4a8c-8de9-9cd1f566377f" name="GET login/" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
+          <message Id="0c4a0579-2347-4a8c-8de9-9cd1f566377f" name="GET login/ " messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
             <elementDefinition Id="7a0704dd-c138-4f98-af22-2526bd7074e7" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="3661c903-f6af-4afe-9bb6-745411826e1c" LastKnownName="MessageOccurrenceSpecification7" />
@@ -382,5 +368,19 @@
   </packagedElements>
   <package Id="e0922f7f-d9e8-4363-9523-b639131a16b5" name="ModelingProject1">
     <elementDefinition Id="75c44da8-41cc-4fa5-a0ac-6c7364a0aa3c" />
+    <profileInstances>
+      <packageHasProfileInstances Id="433df2c9-d96a-4373-97af-dcfc4d5b4510">
+        <profileInstance Id="c1367d45-4cc9-496b-9568-d96f2a378a4c" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="9febbfdb-a648-4ae5-ae2b-1a25c805ab89">
+        <profileInstance Id="dd08b092-a21f-4a3f-ba12-67680bb7eaf0" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </SequenceDesignerModel>

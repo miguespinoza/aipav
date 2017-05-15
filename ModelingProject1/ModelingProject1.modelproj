@@ -29,6 +29,13 @@
       <SubType>Content</SubType>
       <DependentUpon>aipavSimple.classdiagram</DependentUpon>
     </Content>
+    <Content Include="Itinerary.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Itinerary.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Itinerary.sequencediagram</DependentUpon>
+    </Content>
     <Content Include="Login.sequencediagram">
       <SubType>Content</SubType>
     </Content>

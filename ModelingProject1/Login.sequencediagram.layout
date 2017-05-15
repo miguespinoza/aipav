@@ -63,14 +63,14 @@
       </relativeChildShapes>
     </lifelineShape>
     <lifelineShape Id="243e4426-bdd0-4b28-ba08-22ede015fa48" absoluteBounds="6.5, 1, 0.15, 7" visible="true" visualStyleMode="Modified">
-      <lifelineMoniker Id="2246a84d-b5c4-442a-af7a-552aff905e36" LastKnownName="itineraryview" />
+      <lifelineMoniker Id="2246a84d-b5c4-442a-af7a-552aff905e36" LastKnownName="itineraryview2" />
       <relativeChildShapes>
-        <umlLifelineHeadShape Id="1ce5eeb5-b710-4c28-8c30-1d6560924a56" absoluteBounds="6.075, 0.6, 1, 0.4" customColor="White" visualStyleMode="Modified">
-          <lifelineMoniker Id="2246a84d-b5c4-442a-af7a-552aff905e36" LastKnownName="itineraryview" />
+        <umlLifelineHeadShape Id="1ce5eeb5-b710-4c28-8c30-1d6560924a56" absoluteBounds="6.0340010237693784, 0.6, 1.0819979524612426, 0.4" customColor="White" visualStyleMode="Modified">
+          <lifelineMoniker Id="2246a84d-b5c4-442a-af7a-552aff905e36" LastKnownName="itineraryview2" />
           <relativeChildShapes />
         </umlLifelineHeadShape>
         <lifelineHoverShape Id="d3e30772-b92c-4204-94c1-ce32608033e6" absoluteBounds="6.5, 1, 0, 7">
-          <lifelineMoniker Id="2246a84d-b5c4-442a-af7a-552aff905e36" LastKnownName="itineraryview" />
+          <lifelineMoniker Id="2246a84d-b5c4-442a-af7a-552aff905e36" LastKnownName="itineraryview2" />
         </lifelineHoverShape>
       </relativeChildShapes>
     </lifelineShape>

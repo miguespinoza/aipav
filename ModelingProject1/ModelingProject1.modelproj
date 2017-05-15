@@ -29,12 +29,12 @@
       <SubType>Content</SubType>
       <DependentUpon>aipavSimple.classdiagram</DependentUpon>
     </Content>
-    <Content Include="Itinerary.sequencediagram">
+    <Content Include="ItineraryActivity.sequencediagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Itinerary.sequencediagram.layout">
+    <Content Include="ItineraryActivity.sequencediagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>Itinerary.sequencediagram</DependentUpon>
+      <DependentUpon>ItineraryActivity.sequencediagram</DependentUpon>
     </Content>
     <Content Include="Login.sequencediagram">
       <SubType>Content</SubType>
@@ -70,6 +70,27 @@
     <Content Include="UMLComponentDiagram1.componentdiagram.layout">
       <SubType>Content</SubType>
       <DependentUpon>UMLComponentDiagram1.componentdiagram</DependentUpon>
+    </Content>
+    <Content Include="ForumMain.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ForumMain.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>ForumMain.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="ForumCategory.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ForumCategory.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>ForumCategory.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="UMLSequenceDiagram2.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UMLSequenceDiagram2.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UMLSequenceDiagram2.sequencediagram</DependentUpon>
     </Content>
     <Folder Include="ModelDefinition\" />
     <Content Include="ModelDefinition\ModelingProject1.uml">
